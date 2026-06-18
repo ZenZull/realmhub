@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Xezu Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>The Xezu Hub</h1>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#games">Games</a>
+      <a href="#journal">Journal</a>
+      <a href="#comments">Comments</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="profile-banner" id="profile">
+      <div class="banner-overlay">
+        <p class="status">Online • Rebuilding the kingdom</p>
+        <h2>Xezu Raven</h2>
+        <p>Creator • Gamer • Writer • Twitch Affiliate</p>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="sidebar">
+        <div class="panel avatar-panel">
+          <div class="avatar">XR</div>
+          <h3>@theofficialxezuseries</h3>
+          <p class="small">Commander profile active.</p>
+          <button onclick="changeStatus()">Change Status</button>
+          <p id="statusText" class="small">Current mood: Focused</p>
+        </div>
+
+        <div class="panel">
+          <h3>Badges</h3>
+          <div class="badges">
+            <span>Twitch Affiliate</span>
+            <span>Veteran Gamer</span>
+            <span>Story Builder</span>
+            <span>Survivor</span>
+          </div>
+        </div>
+
+        <div class="panel" id="support">
+          <h3>Support Links</h3>
+          <a class="link-button" href="#">Twitch</a>
+          <a class="link-button" href="#">YouTube</a>
+          <a class="link-button" href="#">Discord</a>
+          <a class="link-button" href="#">Tip Jar</a>
+        </div>
+      </aside>
+
+      <section class="main-feed">
+        <div class="panel">
+          <h3>About Me</h3>
+          <p>
+            Welcome to my profile hub. This is my personal space for games, streams,
+            journals, updates, community, and everything I am building next.
+          </p>
+        </div>
+
+        <div class="panel" id="games">
+          <h3>Game Tracker</h3>
+          <div class="game-card">
+            <h4>Mabinogi</h4>
+            <p>Role: Returning endgame player</p>
+            <p>Current focus: Techs, Erg, Arcana, gear path</p>
+          </div>
+          <div class="game-card">
+            <h4>AQWorlds</h4>
+            <p>Role: Veteran account</p>
+            <p>Current focus: Nulgath, classes, story progress</p>
+          </div>
+          <div class="game-card">
+            <h4>Pokémon GO</h4>
+            <p>Role: Event tracker</p>
+            <p>Current focus: raids, Megas, community prep</p>
+          </div>
+        </div>
+
+        <div class="panel" id="journal">
+          <h3>Journal</h3>
+          <article class="post">
+            <h4>First Entry</h4>
+            <p>
+              This is the first version of The Xezu Hub. The mission is simple:
+              build a place where people can connect, follow the journey, and support the work.
+            </p>
+          </article>
+        </div>
+
+        <div class="panel" id="comments">
+          <h3>Comment Wall</h3>
+          <p class="small">Prototype: comments appear on the page but do not save after refresh yet.</p>
+          <input id="nameInput" placeholder="Your name" />
+          <textarea id="commentInput" placeholder="Leave a message..."></textarea>
+          <button onclick="addComment()">Post Comment</button>
+          <div id="commentWall"></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 The Xezu Hub • Gaia-style creator profile prototype</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
