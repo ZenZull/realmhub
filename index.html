@@ -13,6 +13,7 @@
       <a href="#profile">Profile</a>
       <a href="#games">Games</a>
       <a href="#journal">Journal</a>
+      <a href="#gallery">Screenshots</a>
       <a href="#comments">Comments</a>
       <a href="#support">Support</a>
     </nav>
@@ -30,11 +31,13 @@
     <section class="layout">
       <aside class="sidebar">
         <div class="panel avatar-panel">
-          <div class="avatar">XR</div>
+          <div class="avatar">
+            <img src="images/avatar.png" alt="Xezu Avatar" onerror="this.style.display='none'; this.parentElement.textContent='XR';" />
+          </div>
           <h3>@theofficialxezuseries</h3>
           <p class="small">Commander profile active.</p>
+          <p id="statusText" class="small">Current mood: Building RealmHub</p>
           <button onclick="changeStatus()">Change Status</button>
-          <p id="statusText" class="small">Current mood: Focused</p>
         </div>
 
         <div class="panel">
@@ -43,56 +46,46 @@
             <span>Twitch Affiliate</span>
             <span>Veteran Gamer</span>
             <span>Story Builder</span>
-            <span>Survivor</span>
+            <span>Founder</span>
           </div>
         </div>
 
         <div class="panel" id="support">
-          <h3>Support Links</h3>
-          <a class="link-button" href="#">Twitch</a>
-          <a class="link-button" href="#">YouTube</a>
-          <a class="link-button" href="#">Discord</a>
-          <a class="link-button" href="#">Tip Jar</a>
+          <h3>Links</h3>
+          <a class="link-button" href="https://www.twitch.tv/" target="_blank">Twitch</a>
+          <a class="link-button" href="https://www.youtube.com/" target="_blank">YouTube</a>
+          <a class="link-button" href="https://discord.com/" target="_blank">Discord</a>
+          <a class="link-button" href="#" target="_blank">Tip Jar</a>
         </div>
       </aside>
 
       <section class="main-feed">
         <div class="panel">
           <h3>About Me</h3>
-          <p>
-            Welcome to my profile hub. This is my personal space for games, streams,
-            journals, updates, community, and everything I am building next.
-          </p>
+          <p>Welcome to my profile hub. This is my personal space for games, streams, journals, updates, screenshots, community, and everything I am building next.</p>
         </div>
 
         <div class="panel" id="games">
           <h3>Game Tracker</h3>
-          <div class="game-card">
-            <h4>Mabinogi</h4>
-            <p>Role: Returning endgame player</p>
-            <p>Current focus: Techs, Erg, Arcana, gear path</p>
-          </div>
-          <div class="game-card">
-            <h4>AQWorlds</h4>
-            <p>Role: Veteran account</p>
-            <p>Current focus: Nulgath, classes, story progress</p>
-          </div>
-          <div class="game-card">
-            <h4>Pokémon GO</h4>
-            <p>Role: Event tracker</p>
-            <p>Current focus: raids, Megas, community prep</p>
-          </div>
+          <div class="game-card"><h4>Mabinogi</h4><p><strong>Role:</strong> Returning endgame player</p><p><strong>Current focus:</strong> Tech missions, Erg, Arcana, gear path</p><p><strong>Next stream idea:</strong> Rebuilding my endgame route</p></div>
+          <div class="game-card"><h4>AQWorlds</h4><p><strong>Role:</strong> Veteran account</p><p><strong>Current focus:</strong> Nulgath, classes, story progress</p><p><strong>Next stream idea:</strong> Returning player roadmap</p></div>
+          <div class="game-card"><h4>Pokémon GO</h4><p><strong>Role:</strong> Event tracker</p><p><strong>Current focus:</strong> Raids, Megas, community prep</p><p><strong>Next stream idea:</strong> Event prep checklist</p></div>
         </div>
 
         <div class="panel" id="journal">
           <h3>Journal</h3>
-          <article class="post">
-            <h4>First Entry</h4>
-            <p>
-              This is the first version of The Xezu Hub. The mission is simple:
-              build a place where people can connect, follow the journey, and support the work.
-            </p>
-          </article>
+          <article class="post"><h4>RealmHub Begins</h4><p>Today I got my first version of RealmHub online. This started as a profile hub, but the bigger vision is a Gaia-style social platform for gamers and creators.</p></article>
+          <article class="post"><h4>Current Mission</h4><p>Improve the profile page, add real creator links, show my games, and start turning this into a place people can visit.</p></article>
+        </div>
+
+        <div class="panel" id="gallery">
+          <h3>Screenshots</h3>
+          <p class="small">Replace these boxes later with real game screenshots.</p>
+          <div class="gallery">
+            <div class="screenshot">Mabinogi Screenshot</div>
+            <div class="screenshot">AQW Screenshot</div>
+            <div class="screenshot">Pokémon GO Screenshot</div>
+          </div>
         </div>
 
         <div class="panel" id="comments">
@@ -107,10 +100,7 @@
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 The Xezu Hub • Gaia-style creator profile prototype</p>
-  </footer>
-
+  <footer><p>© 2026 The Xezu Hub • RealmHub prototype</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
