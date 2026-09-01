@@ -1,117 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Xezu Hub</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="topbar">
-    <h1>The Xezu Hub</h1>
-    <nav>
-      <a href="#profile">Profile</a>
-      <a href="#games">Games</a>
-      <a href="#journal">Journal</a>
-      <a href="#gallery">Screenshots</a>
-      <a href="#comments">Comments</a>
-      <a href="#support">Support</a>
-    </nav>
-  </header>
-
-  <main class="page-shell">
-    <section class="profile-banner" id="profile">
-      <div class="banner-overlay">
-        <p class="status">Online • Rebuilding the kingdom</p>
-        <h2>Xezu Raven</h2>
-        <p>Creator • Gamer • Writer • Twitch Affiliate</p>
-      </div>
-    </section>
-
-    <section class="layout">
-      <aside class="sidebar">
-        <div class="panel avatar-panel">
-          <div class="avatar">
-            <img src="images/avatar.png" alt="Xezu Avatar" onerror="this.style.display='none'; this.parentElement.textContent='XR';" />
-          </div>
-          <h3>@theofficialxezuseries</h3>
-          <p class="small">Commander profile active.</p>
-          <p id="statusText" class="small">Current mood: Building RealmHub</p>
-          <button onclick="changeStatus()">Change Status</button>
-        </div>
-
-        <div class="panel">
-          <h3>Badges</h3>
-          <div class="badges">
-            <span>Twitch Affiliate</span>
-            <span>Veteran Gamer</span>
-            <span>Story Builder</span>
-            <span>Founder</span>
-          </div>
-        </div>
-
-        <div class="panel" id="support">
-          <h3>Links</h3>
-          <a class="link-button" href="https://www.twitch.tv/nimaikanj" target="_blank">Twitch</a>
-          <a class="link-button" href="https://www.youtube.com/@MabinogjRoyal2009" target="_blank">YouTube</a>
-          <a class="link-button" href="https://discord.com/" target="_blank">Discord</a>
-          <a class="link-button" href="#" target="_blank">Tip Jar</a>
-        </div>
-      </aside>
-
-      <section class="main-feed">
-        <div class="panel">
-          <h3>About Me</h3>
-          <p>Welcome to my profile hub. This is my personal space for games, streams, journals, updates, screenshots, community, and everything I am building next.</p>
-        </div>
-
-        <div class="panel" id="games">
-          <h3>Game Tracker</h3>
-          <div class="game-card"><h4>Mabinogi</h4><p><strong>Role:</strong> Returning endgame player</p><p><strong>Current focus:</strong> Tech missions, Erg, Arcana, gear path</p><p><strong>Next stream idea:</strong> Rebuilding my endgame route</p></div>
-          <div class="game-card"><h4>AQWorlds</h4><p><strong>Role:</strong> Veteran account</p><p><strong>Current focus:</strong> Nulgath, classes, story progress</p><p><strong>Next stream idea:</strong> Returning player roadmap</p></div>
-          <div class="game-card"><h4>Pokémon GO</h4><p><strong>Role:</strong> Event tracker</p><p><strong>Current focus:</strong> Raids, Megas, community prep</p><p><strong>Next stream idea:</strong> Event prep checklist</p></div>
-        </div>
-
-        <div class="panel" id="journal">
-          <h3>Journal</h3>
-          <article class="post"><h4>RealmHub Begins</h4><p>Today I got my first version of RealmHub online. This started as a profile hub, but the bigger vision is a Gaia-style social platform for gamers and creators.</p></article>
-          <article class="post"><h4>Current Mission</h4><p>Improve the profile page, add real creator links, show my games, and start turning this into a place people can visit.</p></article>
-        </div>
-
-        <div class="panel" id="gallery">
-          <h3>Fortnite Creative Maps</h3>
-          <p class="small">Use these island codes in Fortnite to play my published maps.</p>
-          <div class="gallery">
-            <div class="screenshot">
-<h4>The Great Home</h4>
-<p>Island Code: 9168-7917-9383</p>
-</div>
-
-<div class="screenshot">
-<h4>The Church</h4>
-<p>Island Code: 8640-5053-8952</p>
-</div>
-
-<div class="screenshot">
-<h4>Asian Mountains Stage</h4>
-<p>Island Code: 0568-4241-5345</p>
-</div>
-          </div>
-        </div>
-
-        <div class="panel" id="comments">
-          <h3>Comment Wall</h3>
-          <p class="small">Prototype: comments appear on the page but do not save after refresh yet.</p>
-          <input id="nameInput" placeholder="Your name" />
-          <textarea id="commentInput" placeholder="Leave a message..."></textarea>
-          <button onclick="addComment()">Post Comment</button>
-          <div id="commentWall"></div>
-        </div>
-      </section>
-    </section>
-  </main>
-
-  <footer><p>© 2026 The Xezu Hub • RealmHub prototype</p></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RealmHub // Network Interface</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="boot"><div class="boot-glyph">R</div><small>RH // GATEWAY</small><h1>REALMHUB</h1><div class="loader"><i></i></div><p id="bootText">INITIALIZING REALM PROTOCOL</p><button id="skip">SKIP INITIALIZATION</button></div>
+<div id="world" aria-hidden="true"><canvas id="stars"></canvas><div class="scan"></div><header><a data-open="profile" href="#profile"><i>R</i> REALM<b>HUB</b></a><p><span></span> NETWORK STABLE <time>00:00:00</time></p><button id="motion">MOTION // ON</button></header>
+<main><section class="gateway"><small class="coord">R-07 / XEZU NETWORK / <b>ACCESS GRANTED</b></small><div class="orbital"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><svg viewBox="0 0 700 700"><circle cx="350" cy="350" r="270"/><circle cx="350" cy="350" r="175"/><path d="M350 80v95M613 290l-91 20M514 567l-61-78M186 567l61-78M87 290l91 20"/></svg><div id="nodes"></div><button class="core" data-open="profile"><small>◈ 01 // RH</small><strong>REALM<em>HUB</em></strong><span>ENTER THE NETWORK</span><i></i></button></div><div class="preview"><b id="num">01</b><div><small>SELECTED NODE</small><strong id="title">PROFILE</strong></div><p id="desc">Creator identity and live status.</p></div><small class="keys">ARROW KEYS TO EXPLORE • ENTER TO ACCESS</small></section>
+<section id="interface"><div class="shell"><div class="panel-head"><button id="back">← RETURN TO ORBIT</button><p><small id="code">NODE // 01</small><b id="panelTitle">PROFILE</b></p></div><div class="sweep"></div><div class="content">
+<article id="profile" class="active"><div class="hero"><div><small class="eyebrow">COMMANDER PROFILE // ONLINE</small><h2>Xezu <em>Raven</em></h2><p class="lead">Creator • Gamer • Writer • Twitch Affiliate</p><p>Welcome to my profile hub. This is my personal space for games, streams, journals, updates, screenshots, community, and everything I am building next.</p></div><div class="identity"><div class="avatar"><img src="images/avatar.png" alt="Xezu Raven"><b>XR</b></div><p>@theofficialxezuseries</p><small>COMMANDER PROFILE ACTIVE</small></div></div><div class="stats"><div class="card"><small>CURRENT SIGNAL</small><p id="statusText">Building RealmHub</p><button id="status">CYCLE STATUS</button></div><div class="card"><small>CLASS</small><b>STORY BUILDER</b></div><div class="card"><small>NETWORK RANK</small><b>FOUNDER</b></div></div><div class="badges"><span>TWITCH AFFILIATE</span><span>VETERAN GAMER</span><span>STORY BUILDER</span><span>FOUNDER</span></div></article>
+<article id="games"><small class="eyebrow">ACTIVE WORLD INDEX</small><h2>Game <em>Tracker</em></h2><div class="grid"><div class="card game"><small>WORLD // 01</small><h3>Mabinogi</h3><p><b>ROLE</b> Returning endgame player</p><p><b>FOCUS</b> Tech missions, Erg, Arcana, gear path</p><p><b>NEXT</b> Rebuilding my endgame route</p></div><div class="card game"><small>WORLD // 02</small><h3>AQWorlds</h3><p><b>ROLE</b> Veteran account</p><p><b>FOCUS</b> Nulgath, classes, story progress</p><p><b>NEXT</b> Returning player roadmap</p></div><div class="card game"><small>WORLD // 03</small><h3>Pokémon GO</h3><p><b>ROLE</b> Event tracker</p><p><b>FOCUS</b> Raids, Megas, community prep</p><p><b>NEXT</b> Event prep checklist</p></div></div></article>
+<article id="journal"><small class="eyebrow">ENCRYPTED FIELD NOTES</small><h2>Realm <em>Journal</em></h2><div class="timeline"><section><small>ENTRY // 001</small><h3>RealmHub Begins</h3><p>Today I got my first version of RealmHub online. This started as a profile hub, but the bigger vision is a Gaia-style social platform for gamers and creators.</p></section><section><small>ENTRY // 002</small><h3>Current Mission</h3><p>Improve the profile page, add real creator links, show my games, and start turning this into a place people can visit.</p></section></div></article>
+<article id="gallery"><small class="eyebrow">CAPTURE ARCHIVE</small><h2>Screenshot <em>Vault</em></h2><div class="vault"><b>◇</b><p>VISUAL ARCHIVE AWAITING NEW CAPTURES</p><small>Future screenshots and world memories will materialize here.</small></div></article>
+<article id="projects"><small class="eyebrow">PUBLISHED COORDINATES</small><h2>Fortnite <em>Creative Maps</em></h2><p class="lead">Enter these island codes in Fortnite to access the published realms.</p><div class="grid maps"><div class="map"><small>PROJECT // 01</small><div class="mapart"></div><h3>The Great Home</h3><code>9168-7917-9383</code><button data-copy="9168-7917-9383">COPY ISLAND CODE</button></div><div class="map"><small>PROJECT // 02</small><div class="mapart two"></div><h3>The Church</h3><code>8640-5053-8952</code><button data-copy="8640-5053-8952">COPY ISLAND CODE</button></div><div class="map"><small>PROJECT // 03</small><div class="mapart three"></div><h3>Asian Mountains Stage</h3><code>0568-4241-5345</code><button data-copy="0568-4241-5345">COPY ISLAND CODE</button></div></div></article>
+<article id="comments"><small class="eyebrow">OPEN COMMS CHANNEL</small><h2>Comment <em>Wall</em></h2><p>Prototype: transmissions appear locally but reset when the gateway closes.</p><form id="commentForm"><label>CALLSIGN<input id="nameInput" maxlength="40" placeholder="Your name"></label><label>TRANSMISSION<textarea id="commentInput" maxlength="500" placeholder="Leave a message..." required></textarea></label><button>SEND TRANSMISSION</button></form><div id="wall"></div></article>
+<article id="support"><small class="eyebrow">EXTERNAL CONNECTIONS</small><h2>Support the <em>Network</em></h2><div class="links"><a href="https://www.twitch.tv/nimaikanj" target="_blank"><small>LIVE // 01</small><b>Twitch</b><i>↗</i></a><a href="https://www.youtube.com/@MabinogjRoyal2009" target="_blank"><small>ARCHIVE // 02</small><b>YouTube</b><i>↗</i></a><a href="https://discord.com/" target="_blank"><small>COMMS // 03</small><b>Discord</b><i>↗</i></a><a href="#" class="disabled"><small>SUPPORT // 04</small><b>Tip Jar</b><i>LOCKED</i></a></div></article>
+</div><footer>REALMHUB OS // 2026 <span>CONNECTION SECURE</span></footer></div></section></main></div><script src="script.js"></script></body></html>
