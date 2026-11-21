@@ -19,8 +19,8 @@ img{max-width:100%;display:block}
 .status{font-size:.82rem;font-weight:800;letter-spacing:.12em;color:var(--muted)}
 .status i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;background:#22c55e;margin-right:.35rem;box-shadow:0 0 0 4px #22c55e2e}
 .hero{display:grid;grid-template-columns:.92fr 1.08fr;min-height:82vh;background:var(--bg);border-bottom:1px solid var(--line)}
-.hero-visual{margin:0;position:relative;background:#000}
-.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.hero-visual{margin:0;position:relative;background:#000;align-self:start}
+.hero-visual img{width:100%;height:auto;object-fit:contain}
 .hero-visual figcaption{position:absolute;left:0;right:0;bottom:0;padding:.6rem 1rem;background:linear-gradient(transparent,rgba(0,0,0,.88));color:#fff;font-size:.78rem;font-weight:800;letter-spacing:.16em}
 .hero-copy{padding:3.2rem 2.4rem 2.6rem;display:flex;flex-direction:column;justify-content:center;gap:1.05rem;border-left:4px solid var(--red)}
 .eyebrow{font-weight:800;letter-spacing:.18em;font-size:.78rem;color:var(--red)}
@@ -49,7 +49,7 @@ img{max-width:100%;display:block}
 .card p{margin:.3rem 0 .8rem;color:var(--muted)}
 .card a{font-weight:800}
 .card.featured{display:grid;grid-template-columns:200px 1fr;padding:0}
-.card-art{width:100%;height:100%;object-fit:cover}
+.card-art{width:100%;height:100%;object-fit:contain;background:#000}
 .card.wide{grid-column:1/-1}
 code{background:#000;border:1px solid var(--red-dim);color:#ffb3ba;padding:.15rem .5rem;border-radius:7px;font-size:.95em;cursor:pointer}
 .timeline{display:grid;gap:1rem}
@@ -57,7 +57,7 @@ code{background:#000;border:1px solid var(--red-dim);color:#ffb3ba;padding:.15re
 .timeline small{font-weight:800;letter-spacing:.13em;font-size:.74rem;color:var(--red)}
 .timeline h3{margin:.4rem 0}.timeline p{margin:.2rem 0;color:var(--muted)}
 .poster{margin:0 0 1.1rem;border:1px solid var(--line);border-top:3px solid var(--red);border-radius:var(--radius);overflow:hidden;background:#000}
-.poster img{width:100%;max-height:640px;object-fit:cover;object-position:top center}
+.poster img{width:100%;height:auto;object-fit:contain}
 .poster figcaption{padding:.7rem 1rem;font-size:.8rem;font-weight:800;letter-spacing:.16em;color:var(--muted)}
 .link-row{display:flex;flex-wrap:wrap;gap:.8rem}
 .link-row a{padding:.9rem 1.25rem;border-radius:999px;background:var(--card2);border:1px solid var(--line);color:#fff;text-decoration:none;font-weight:800}
@@ -66,9 +66,9 @@ footer{background:#000;border-top:2px solid var(--red);color:var(--muted);paddin
 footer strong{color:#fff;letter-spacing:.06em}
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}
-  .hero-visual img{max-height:70vh}
+  .hero-visual img{max-height:none}
   .hero-copy{padding:2rem 1.3rem;border-left:none;border-top:4px solid var(--red)}
   .card.featured{grid-template-columns:1fr}
-  .card-art{max-height:420px}
+  .card-art{max-height:none}
   body{font-size:18px}
 }
